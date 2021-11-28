@@ -1,0 +1,357 @@
+/* Цвет основного текста #212121 */
+/* Вторичный цвет текста #757575 */
+/* Белый цвет #FFFFFF */
+/* Акцент #2196F3 */
+/* Цвет для контактной информации rgba(255, 255, 255, 0.6); */
+/* Первичный цвет фона #FFFFFF */
+/* Вторичный цвет фона #2F303A */
+/* Третьичный цвет фона #F5F4FA */
+
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --contact-color: rgba(255, 255, 255, 0.6);
+  --primary-white-color: #ffffff;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+}
+
+/* Утилиты */
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 2px solid tomato; */
+}
+
+/* Шапка сайта */
+
+.site {
+  background-color: var(--primary-white-color);
+}
+
+.logo {
+  color: #000000;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  margin-right: 93px;
+}
+.blue {
+  color: var(--accent-color);
+}
+.white {
+  color: var(--primary-white-color);
+}
+
+/* Навигация */
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.site-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+button {
+  font-family: inherit;
+}
+
+/* Контакты */
+
+.contacts {
+  display: flex;
+  align-items: center;
+}
+
+.contacts .item + .item {
+  margin-left: 50px;
+}
+
+/* Для выравнивания в одну строку */
+.flex-nav {
+  display: flex;
+  align-items: center;
+}
+.main {
+  display: flex;
+  align-items: center;
+}
+
+.margin {
+  margin-left: auto;
+}
+
+.contacts .link {
+  color: var(--secondary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/* Bg */
+.bg-title {
+  color: var(--primary-white-color);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+.bg {
+  background-color: #2f303a;
+  text-align: center;
+}
+
+/* Button */
+.primary-button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  border-color: var(--accent-color);
+}
+
+/* Секция особенности */
+
+.section {
+  display: flex;
+  /* align-items: center; */
+}
+.tutle {
+  width: 270px;
+  margin-right: 30px;
+}
+.tutle:last-child {
+  margin-right: 0px;
+}
+
+.section-title {
+  color: var(--secondary-text-color);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  margin-top: 0px;
+  margin-bottom: 94px;
+}
+.peculiarities-title {
+  color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-top: 94px;
+  margin-bottom: 10px;
+}
+.peculiarities {
+  background-color: #e5e5e5;
+}
+/* Секция чем мы занимаемся */
+
+.work-list {
+  display: flex;
+}
+.work-list .item {
+  width: 370px;
+  margin-right: 30px;
+}
+.work-list .item:last-child {
+  margin-right: 0px;
+}
+
+.work {
+  background-color: #e5e5e5;
+  color: var(--primary-text-color);
+
+  padding-bottom: 94px;
+}
+.work-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+/* Секция наша команда */
+.command-title {
+  display: flex;
+  text-align: center;
+}
+
+.command-title .item {
+  width: 270px;
+  margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.command-title .item:last-child {
+  margin-right: 0;
+}
+
+.team-title {
+  color: var(--primary-text-color);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.leader-title {
+  color: var(--secondary-text-color);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+.team {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-your {
+  color: var(--primary-text-color);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+/* Футер */
+.foot {
+  background-color: #2f303a;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.foot-title {
+  color: var(--primary-white-color);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.colour {
+  color: var(--contact-color);
+}
+
+.colour .link:hover,
+.colour .link:focus {
+  color: var(--accent-color);
+}
+.colour .link {
+  color: var(--contact-color);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 9px;
+}
+.link:last-child {
+  margin-bottom: 0;
+}

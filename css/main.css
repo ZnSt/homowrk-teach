@@ -105,7 +105,30 @@ button {
 .contacts .item + .item {
   margin-left: 50px;
 }
+.contacts .item {
+  align-items: center;
+  display: flex;
+}
+.contacts .item::before {
+  content: "";
+  margin-right: 10px;
+}
+.icon-mail::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  background-position: center;
+  background-image: url(../images/envelope.svg);
+}
 
+.icon-tel::before {
+  content: "";
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/phone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 /* Для выравнивания в одну строку */
 .flex-nav {
   display: flex;
@@ -188,6 +211,28 @@ button {
   margin-right: 0px;
 }
 
+.tutle::before {
+  display: block;
+  content: "";
+  background-color: #f5f4fa;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+.icon-astranaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
 .section-title {
   color: var(--secondary-text-color);
 
@@ -208,11 +253,13 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  margin-top: 94px;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 .peculiarities {
-  background-color: #e5e5e5;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #ffffff;
 }
 /* Секция чем мы занимаемся */
 
@@ -228,7 +275,7 @@ button {
 }
 
 .work {
-  background-color: #e5e5e5;
+  background-color: #ffffff;
   color: var(--primary-text-color);
 
   padding-bottom: 94px;

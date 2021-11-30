@@ -152,6 +152,8 @@ button {
 .bg {
   background-color: #2f303a;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 /* Button */
@@ -354,4 +356,19 @@ button {
 }
 .link:last-child {
   margin-bottom: 0;
+}
+
+/* Overlay */
+.overlay {
+  height: 600px;
+  /* outline: 6px solid red; */
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(147, 149, 165, 0.4),
+      rgba(147, 149, 165, 0.4)
+    ),
+    url(../images/work.jpg);
 }

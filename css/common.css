@@ -114,6 +114,30 @@ ul {
   color: var(--accent-color);
 }
 
+.contacts .item {
+  align-items: center;
+  display: flex;
+}
+.contacts .item::before {
+  content: "";
+  margin-right: 10px;
+}
+.icon-mail::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  background-position: center;
+  background-image: url(../images/envelope.svg);
+}
+.icon-tel::before {
+  content: "";
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/phone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* Секция Main */
 /* Кнопка */
 .colour-button {

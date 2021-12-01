@@ -333,7 +333,7 @@ button {
   letter-spacing: 0.03em;
   text-align: center;
 
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .team {
@@ -418,4 +418,53 @@ button {
       rgba(147, 149, 165, 0.4)
     ),
     url(../images/work.jpg);
+}
+
+/* icon ellipse */
+.command-title .item {
+}
+.ellipse {
+  align-items: center;
+  display: inline-block;
+  background-repeat: no-repeat;
+  content: "";
+  width: 44px;
+  height: 44px;
+  background-position: center;
+  margin-bottom: 42px;
+}
+
+.instagram {
+  background-image: url(../images/instagram.svg);
+  align-items: center;
+}
+
+.twitter {
+  background-image: url(../images/twitter.svg);
+  align-items: center;
+}
+.facebook {
+  background-image: url(../images/facebook.svg);
+  align-items: center;
+}
+.linkedin {
+  background-image: url(../images/linkedin.svg);
+  align-items: center;
+}
+
+.join {
+  display: flex;
+
+  color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.join-flex {
+  display: flex;
+  flex-direction: column;
 }

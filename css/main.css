@@ -451,10 +451,15 @@ button {
   background-image: url(../images/linkedin.svg);
   align-items: center;
 }
+/* флекс для футера - 
+(контакты лого и соц сети) */
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
 
 .join {
   display: flex;
-
   color: #ffffff;
   font-family: Roboto;
   font-style: normal;
@@ -464,7 +469,8 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.join-flex {
-  display: flex;
-  flex-direction: column;
+
+.follow {
+  align-items: center;
+  margin-left: 70px;
 }

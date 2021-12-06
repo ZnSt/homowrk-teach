@@ -474,3 +474,11 @@ button {
   align-items: center;
   margin-left: 70px;
 }
+
+.social-icon {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-image: url(../images/insta-icon.svg);
+  background-repeat: no-repeat;
+}
